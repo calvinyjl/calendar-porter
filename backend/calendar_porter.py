@@ -19,25 +19,25 @@ def html_to_dataframe(student_id: int):
 
     # Separating schedules into arrays
     data = []
-    # for schedule in schedules:
-    #     date = schedule.find("span", class_="labelone")
-    #     table = schedule.find("table", class_="spreadsheet")
-    #     for row in table.find_all("tr"):
-    #         row_data = []
-    #         row_data.append(date.get_text(strip=True)[-8:])
-    #         for cell in row.find_all("td"):
-    #             row_data.append(cell.get_text(strip=True))
-    #     data.append(row_data)
+    for schedule in schedules:
+        date = schedule.find("span", class_="labelone")
+        table = schedule.find("table", class_="spreadsheet")
+        for row in table.find_all("tr"):
+            row_data = []
+            row_data.append(date.get_text(strip=True)[-8:])
+            for cell in row.find_all("td"):
+                row_data.append(cell.get_text(strip=True))
+        data.append(row_data)
 
-    schedule = soup.find("div", class_="spreadsheet")
-    date = schedule.find("span", class_="labelone")
-    table = schedule.find("table", class_="spreadsheet")
-    for row in table.find_all("tr"):
-        row_data = []
-        row_data.append(date.get_text(strip=True)[-8:])
-        for cell in row.find_all("td"):
-            row_data.append(cell.get_text(strip=True))
-    data.append(row_data)
+    # schedule = soup.find("div", class_="spreadsheet")
+    # date = schedule.find("span", class_="labelone")
+    # table = schedule.find("table", class_="spreadsheet")
+    # for row in table.find_all("tr"):
+    #     row_data = []
+    #     row_data.append(date.get_text(strip=True)[-8:])
+    #     for cell in row.find_all("td"):
+    #         row_data.append(cell.get_text(strip=True))
+    # data.append(row_data)
 
     df = pd.DataFrame(data, columns=["date", "activity", "description", "type", "local_start", "local_end", "location", "london_start", "london_end"])
     return df

@@ -90,10 +90,12 @@ app.post('/api/scrape', async (req, res) => {
 });
 
 // Converting the .json to .ics
-app.get('/api/calendar', async (req, res) => {
+app.get('/api/calendar', (req, res) => {
     try {
         const fileContent = fs.readFileSync('schedule.json', 'utf8');
         const schedule = JSON.parse(fileContent);
+        const uniqueTypes = [...new Set(schedule.map(item => item.type))];
+
         function transformEventToIcsFormat(event) {
             const [day, month, year] = event.date.split('/').map(Number);
             const fullYear = year + 2000;
@@ -111,21 +113,23 @@ app.get('/api/calendar', async (req, res) => {
         };
 
         const events = schedule.map(transformEventToIcsFormat);
+        uniqueTypes.forEach(async (type) => {
+            filteredEvents = events.filter(event => event.type === type);
 
-        const convertToIcs = await new Promise((resolve, reject) => {
-            ics.createEvents(events, (err, value) => {
-                if (err) {
-                    console.log(err);
-                    reject(new Error(`Failed to create ics file: ${err}`));
-                }
-                fs.writeFileSync(path.join(__dirname, '/calendar.ics'), value);
-                resolve(path.join(__dirname, '/calendar.ics'));
+            const convertToIcs = await new Promise((resolve, reject) => {
+                ics.createEvents(events, (err, value) => {
+                    if (err) {
+                        console.log(err);
+                        reject(new Error(`Failed to create ics file: ${err}`));
+                    }
+                    fs.writeFileSync(path.join(__dirname, 'calendars', `/${type}.ics`), value);
+                    resolve(path.join(__dirname, 'calendars', `/${type}.ics`));
+                });
             });
         });
 
-        console.log('Sending file to download...');
-        // res.download(path.join(__dirname, 'calendar.ics'));
-        res.download(path.join(__dirname, '/calendar.ics'));
+        // res.download(path.join(__dirname, '/calendar.ics'));
+        res.send('blah');
 
     } catch (err) {
         console.log('Converting failed:', err.message);
