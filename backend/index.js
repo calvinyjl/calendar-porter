@@ -1,16 +1,13 @@
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const ics = require('ics');
-const { DESTRUCTION } = require('dns');
 const app = express();
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors())
 
 // Endpoints
 app.get('/', (req, res) => {
@@ -38,7 +35,7 @@ app.post('/api/scrape', async (req, res) => {
 
             scraper.stdout.on('data', (data) => {
                 output += data.toString();
-                console.log('Python output chunk:', data.toString());
+                // console.log('Python output chunk:', data.toString());
             });
 
             scraper.stderr.on('data', (data) => {
@@ -93,7 +90,7 @@ app.post('/api/scrape', async (req, res) => {
 });
 
 // Converting the .json to .ics
-app.get('/api/calendar', (req, res) => {
+app.get('/api/calendar', async (req, res) => {
     try {
         const fileContent = fs.readFileSync('schedule.json', 'utf8');
         const schedule = JSON.parse(fileContent);
@@ -109,14 +106,27 @@ app.get('/api/calendar', (req, res) => {
                 title: event.activity,
                 description: event.description,
                 location: event.location,
-                categories: ['Work', event.type]
+                categories: ['School', event.type]
             }
         };
 
         const events = schedule.map(transformEventToIcsFormat);
 
-        console.log(events);
-        res.send('Hallo :)');
+        const convertToIcs = await new Promise((resolve, reject) => {
+            ics.createEvents(events, (err, value) => {
+                if (err) {
+                    console.log(err);
+                    reject(new Error(`Failed to create ics file: ${err}`));
+                }
+                fs.writeFileSync(path.join(__dirname, '/calendar.ics'), value);
+                resolve(path.join(__dirname, '/calendar.ics'));
+            });
+        });
+
+        console.log('Sending file to download...');
+        // res.download(path.join(__dirname, 'calendar.ics'));
+        res.download(path.join(__dirname, '/calendar.ics'));
+
     } catch (err) {
         console.log('Converting failed:', err.message);
         res.status(500).json({
