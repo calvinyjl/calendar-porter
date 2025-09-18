@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors())
 
-// Endings
+// Endpoints
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'home.html'));
 });
@@ -67,15 +67,16 @@ app.post('/api/scrape', async (req, res) => {
         });
 
         console.log('Scraping completed successfully!');
-        fs.writeFile(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2), (err) => {
+        fs.writeFileSync(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2), (err) => {
             console.log('Writing to schedule.json...');
             if (err) throw new Error(`Failed to write to schedule.json: ${err}`);
         });
-        res.json({
-            success: true,
-            message: 'Scraping completed successfully!',
-            studentId: studentId,
-        });
+        // res.json({
+        //     success: true,
+        //     message: 'Scraping completed successfully!',
+        //     studentId: studentId,
+        // });
+        res.redirect('/api/calendar');
 
     } catch (error) {
         console.error('Scraping failed:', error.message);
@@ -86,6 +87,11 @@ app.post('/api/scrape', async (req, res) => {
             studentId: studentId
         });
     }
+});
+
+// Converting the .json to .ics
+app.get('/api/calendar', (req, res) => {
+    res.send('Converting....');
 });
 
 // Port
