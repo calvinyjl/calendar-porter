@@ -3,6 +3,8 @@ const cors = require('cors');
 const path = require('path');
 const { spawn } = require('child_process');
 const fs = require('fs');
+const ics = require('ics');
+const { DESTRUCTION } = require('dns');
 const app = express();
 
 // Middleware
@@ -67,6 +69,7 @@ app.post('/api/scrape', async (req, res) => {
         });
 
         console.log('Scraping completed successfully!');
+
         fs.writeFileSync(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2), (err) => {
             console.log('Writing to schedule.json...');
             if (err) throw new Error(`Failed to write to schedule.json: ${err}`);
@@ -91,7 +94,37 @@ app.post('/api/scrape', async (req, res) => {
 
 // Converting the .json to .ics
 app.get('/api/calendar', (req, res) => {
-    res.send('Converting....');
+    try {
+        const fileContent = fs.readFileSync('schedule.json', 'utf8');
+        const schedule = JSON.parse(fileContent);
+        function transformEventToIcsFormat(event) {
+            const [day, month, year] = event.date.split('/').map(Number);
+            const fullYear = year + 2000;
+            const [startHour, startMinute] = event.local_start.split(':').map(Number);
+            const [endHour, endMinute] = event.local_end.split(':').map(Number);
+
+            return {
+                start: [fullYear, month, day, startHour, startMinute],
+                duration: { hours: endHour - startHour, minutes: endMinute - startMinute },
+                title: event.activity,
+                description: event.description,
+                location: event.location,
+                categories: ['Work', event.type]
+            }
+        };
+
+        const events = schedule.map(transformEventToIcsFormat);
+
+        console.log(events);
+        res.send('Hallo :)');
+    } catch (err) {
+        console.log('Converting failed:', err.message);
+        res.status(500).json({
+            success: false,
+            message: 'Converting failed',
+            error: err.message
+        });
+    }
 });
 
 // Port
