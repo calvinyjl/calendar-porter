@@ -9,7 +9,7 @@
 
 <body>
     <p>This site will port your QMUL timetable into your native calendar app!</p>
-    <form action="/" method="POST">
+    <form action="/api/scrape" method="POST">
         <label for="studentId">Student ID</label>
         <input type="text" name="studentId" id="studentId">
         <button type="submit">Convert!</button>
