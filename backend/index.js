@@ -1,4 +1,5 @@
 const express = require('express');
+const zip = require('express-zip');
 const path = require('path');
 const { spawn } = require('child_process');
 const fs = require('fs');
@@ -113,6 +114,7 @@ app.get('/api/calendar', (req, res) => {
         };
 
         const events = schedule.map(transformEventToIcsFormat);
+        var filePaths = [];
         uniqueTypes.forEach(async (type) => {
             filteredEvents = events.filter(event => event.type === type);
 
@@ -124,12 +126,17 @@ app.get('/api/calendar', (req, res) => {
                     }
                     fs.writeFileSync(path.join(__dirname, 'calendars', `/${type}.ics`), value);
                     resolve(path.join(__dirname, 'calendars', `/${type}.ics`));
+
+                    filePaths.push({
+                        path: path.join(__dirname, 'calendars', `/${type}.ics`), name: `${type}.ics`
+                    });
                 });
             });
         });
 
         // res.download(path.join(__dirname, '/calendar.ics'));
-        res.send('blah');
+        console.log(filePaths);
+        res.zip(filePaths);
 
     } catch (err) {
         console.log('Converting failed:', err.message);
