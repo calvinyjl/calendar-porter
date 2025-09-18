@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const { spawn } = require('child_process');
+const fs = require('fs');
 const app = express();
 
 // Middleware
@@ -14,6 +15,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'home.html'));
 });
 
+// Runs scraping script
+// Saves output to schedule.json
+// Otherwise throws errors
 app.post('/api/scrape', async (req, res) => {
     const studentId = req.body.studentId;
 
@@ -62,12 +66,15 @@ app.post('/api/scrape', async (req, res) => {
             });
         });
 
-        console.log('Scraping completed successfully:', result);
+        console.log('Scraping completed successfully!');
+        fs.writeFile(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2), (err) => {
+            console.log('Writing to schedule.json...');
+            if (err) throw new Error(`Failed to write to schedule.json: ${err}`);
+        });
         res.json({
             success: true,
             message: 'Scraping completed successfully!',
             studentId: studentId,
-            data: result
         });
 
     } catch (error) {
