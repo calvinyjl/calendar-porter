@@ -90,7 +90,7 @@ app.post('/api/scrape', async (req, res) => {
 // Converting the .json to .ics
 app.get('/api/calendar', async (req, res) => {
     try {
-        const fileContent = fs.promises.readFile('schedule.json', 'utf8');
+        const fileContent = await fs.promises.readFile('schedule.json', 'utf8');
         const schedule = JSON.parse(fileContent);
         const uniqueTypes = [...new Set(schedule.map(item => item.type))];
 
@@ -113,7 +113,7 @@ app.get('/api/calendar', async (req, res) => {
         const events = schedule.map(transformEventToIcsFormat);
         const filePaths = await Promise.all(
             uniqueTypes.map(async (type) => {
-                const filteredEvents = events.filter(event => event.type === type);
+                const filteredEvents = events.filter(event => event.categories[1] === type);
 
                 return await new Promise((resolve, reject) => {
                     ics.createEvents(filteredEvents, (err, value) => {
