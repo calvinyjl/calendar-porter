@@ -12,6 +12,28 @@
   },
   {
     "date": "23/09/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "23/09/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "23/09/25",
     "activity": "ECS519U/A/Lecture",
     "description": "Database Systems",
     "type": "Lecture",
@@ -20,6 +42,39 @@
     "location": "Arts Two: LT (304)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "25/09/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "25/09/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "25/09/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "25/09/25",
@@ -34,6 +89,61 @@
   },
   {
     "date": "29/09/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "29/09/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "29/09/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "29/09/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "29/09/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "29/09/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -42,6 +152,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "30/09/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "30/09/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "30/09/25",
@@ -67,6 +199,39 @@
   },
   {
     "date": "02/10/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "02/10/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "02/10/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "02/10/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -78,6 +243,61 @@
   },
   {
     "date": "06/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "06/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "06/10/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "06/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "06/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "06/10/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -86,6 +306,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "07/10/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "07/10/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "07/10/25",
@@ -111,6 +353,39 @@
   },
   {
     "date": "09/10/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "09/10/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "09/10/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "09/10/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -122,6 +397,61 @@
   },
   {
     "date": "13/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "13/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "13/10/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "13/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "13/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "13/10/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -130,6 +460,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "14/10/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "14/10/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "14/10/25",
@@ -155,6 +507,39 @@
   },
   {
     "date": "16/10/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "16/10/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "16/10/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "16/10/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -166,6 +551,61 @@
   },
   {
     "date": "20/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "20/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "20/10/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "20/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "20/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "20/10/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -174,6 +614,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "21/10/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "21/10/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "21/10/25",
@@ -199,6 +661,39 @@
   },
   {
     "date": "23/10/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "23/10/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "23/10/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "23/10/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -210,6 +705,61 @@
   },
   {
     "date": "27/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "27/10/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "27/10/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "27/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "27/10/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "27/10/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -218,6 +768,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "28/10/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "28/10/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "28/10/25",
@@ -243,6 +815,39 @@
   },
   {
     "date": "30/10/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "30/10/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "30/10/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "30/10/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -251,6 +856,61 @@
     "location": "TB Lab - 1st Floor (TB-101/102) (94)",
     "london_start": "14:00",
     "london_end": "16:00"
+  },
+  {
+    "date": "03/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/11/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "03/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "03/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
   },
   {
     "date": "03/11/25",
@@ -287,6 +947,39 @@
   },
   {
     "date": "06/11/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "06/11/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "06/11/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "06/11/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -298,6 +991,61 @@
   },
   {
     "date": "10/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/11/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "10/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "10/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "10/11/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -306,6 +1054,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "11/11/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "11/11/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "11/11/25",
@@ -331,6 +1101,39 @@
   },
   {
     "date": "13/11/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "13/11/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "13/11/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "13/11/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -342,6 +1145,61 @@
   },
   {
     "date": "17/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/11/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "17/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "17/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "17/11/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -350,6 +1208,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "18/11/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "18/11/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "18/11/25",
@@ -375,6 +1255,39 @@
   },
   {
     "date": "20/11/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "20/11/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "20/11/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "20/11/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -386,6 +1299,61 @@
   },
   {
     "date": "24/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/11/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/11/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "24/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "24/11/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "24/11/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -394,6 +1362,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "25/11/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "25/11/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "25/11/25",
@@ -419,6 +1409,39 @@
   },
   {
     "date": "27/11/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "27/11/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "27/11/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "27/11/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -430,6 +1453,61 @@
   },
   {
     "date": "01/12/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "01/12/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "01/12/25",
+    "activity": "ECS509U/A/Lec/01",
+    "description": "Probability and Matrices",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "01/12/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "01/12/25",
+    "activity": "ECS505U/A/LabSession/01",
+    "description": "Software Engineering",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "01/12/25",
     "activity": "ECS505U/A/LabSession/01",
     "description": "Software Engineering",
     "type": "Lab",
@@ -438,6 +1516,28 @@
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "16:00",
     "london_end": "18:00"
+  },
+  {
+    "date": "02/12/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "02/12/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "02/12/25",
@@ -463,6 +1563,39 @@
   },
   {
     "date": "04/12/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "04/12/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "04/12/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "04/12/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -474,12 +1607,56 @@
   },
   {
     "date": "08/12/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "08/12/25",
+    "activity": "ECS519U/A/Lab/01",
+    "description": "Database Systems",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "08/12/25",
     "activity": "ECS509U/A/Lec/01",
     "description": "Probability and Matrices",
     "type": "Lecture",
     "local_start": "14:00",
     "local_end": "16:00",
     "location": "Arts Two: LT (304)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "09/12/25",
+    "activity": "ECS519U/A/Tutorial/03",
+    "description": "Database Systems",
+    "type": "Tutorial",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "Queens: QB-203 EECS (84)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "09/12/25",
+    "activity": "ECS529U/A/Lecture/02",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Great Hall (600)",
     "london_start": "14:00",
     "london_end": "16:00"
   },
@@ -507,6 +1684,39 @@
   },
   {
     "date": "11/12/25",
+    "activity": "ECS529U/A/Lecture/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lecture",
+    "local_start": "10:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "10:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "11/12/25",
+    "activity": "ECS505U/A/Lecture",
+    "description": "Software Engineering",
+    "type": "Lecture",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "11/12/25",
+    "activity": "ECS529U/A/Lab/01",
+    "description": "Algorithms and Data Structures",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "11/12/25",
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -526,6 +1736,28 @@
     "location": "PP:Great Hall (600)",
     "london_start": "09:00",
     "london_end": "11:00"
+  },
+  {
+    "date": "26/01/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "26/01/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
   },
   {
     "date": "26/01/26",
@@ -551,6 +1783,28 @@
   },
   {
     "date": "29/01/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "29/01/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "29/01/26",
     "activity": "ECS524U/B/Lecture",
     "description": "Internet Protocols and Applications",
     "type": "Lecture",
@@ -573,6 +1827,28 @@
   },
   {
     "date": "02/02/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "02/02/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "02/02/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -584,6 +1860,50 @@
   },
   {
     "date": "03/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/02/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -592,6 +1912,61 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "05/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "05/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "05/02/26",
+    "activity": "ECS524U/B/Lecture",
+    "description": "Internet Protocols and Applications",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Skeel-LT(247)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "05/02/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "05/02/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
   },
   {
     "date": "05/02/26",
@@ -617,6 +1992,28 @@
   },
   {
     "date": "09/02/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "09/02/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "09/02/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -628,6 +2025,50 @@
   },
   {
     "date": "10/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/02/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -636,6 +2077,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "12/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "12/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "12/02/26",
@@ -661,6 +2124,28 @@
   },
   {
     "date": "16/02/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "16/02/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "16/02/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -672,6 +2157,50 @@
   },
   {
     "date": "17/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/02/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -680,6 +2209,61 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "19/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "19/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "19/02/26",
+    "activity": "ECS524U/B/Lecture",
+    "description": "Internet Protocols and Applications",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Skeel-LT(247)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "19/02/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "19/02/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
   },
   {
     "date": "19/02/26",
@@ -705,6 +2289,28 @@
   },
   {
     "date": "23/02/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "23/02/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "23/02/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -716,6 +2322,50 @@
   },
   {
     "date": "24/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/02/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/02/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -724,6 +2374,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "26/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "26/02/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "26/02/26",
@@ -749,6 +2421,28 @@
   },
   {
     "date": "02/03/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "02/03/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "02/03/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -760,6 +2454,50 @@
   },
   {
     "date": "03/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "03/03/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -768,6 +2506,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "05/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "05/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "05/03/26",
@@ -793,6 +2553,28 @@
   },
   {
     "date": "09/03/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "09/03/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "09/03/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -809,9 +2591,97 @@
     "type": "Lab",
     "local_start": "09:00",
     "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "10/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
     "location": "TB Lab - 2nd Floor (TB-202) (40)",
     "london_start": "09:00",
     "london_end": "11:00"
+  },
+  {
+    "date": "12/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "12/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "12/03/26",
+    "activity": "ECS524U/B/Lecture",
+    "description": "Internet Protocols and Applications",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Skeel-LT(247)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "12/03/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "12/03/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
   },
   {
     "date": "12/03/26",
@@ -837,6 +2707,28 @@
   },
   {
     "date": "16/03/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "16/03/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "16/03/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -848,6 +2740,50 @@
   },
   {
     "date": "17/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "17/03/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -856,6 +2792,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "19/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "19/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "19/03/26",
@@ -881,6 +2839,28 @@
   },
   {
     "date": "23/03/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "23/03/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "23/03/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -892,6 +2872,50 @@
   },
   {
     "date": "24/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "24/03/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -900,6 +2924,61 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "26/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "26/03/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "26/03/26",
+    "activity": "ECS524U/B/Lecture",
+    "description": "Internet Protocols and Applications",
+    "type": "Lecture",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "PP:Skeel-LT(247)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "26/03/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "16:00",
+    "london_end": "18:00"
+  },
+  {
+    "date": "26/03/26",
+    "activity": "ECS524U/B/LabSession/01",
+    "description": "Internet Protocols and Applications",
+    "type": "Lab",
+    "local_start": "16:00",
+    "local_end": "18:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "16:00",
+    "london_end": "18:00"
   },
   {
     "date": "26/03/26",
@@ -925,6 +3004,28 @@
   },
   {
     "date": "30/03/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "30/03/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "30/03/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -936,6 +3037,50 @@
   },
   {
     "date": "31/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "31/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "31/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "31/03/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "31/03/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -944,6 +3089,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "02/04/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "02/04/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "02/04/26",
@@ -969,6 +3136,28 @@
   },
   {
     "date": "06/04/26",
+    "activity": "ECS518U/B/Lecture/01",
+    "description": "Operating Systems",
+    "type": "Lecture",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "PP:Great Hall (600)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "06/04/26",
+    "activity": "ECS518U/B/Lab/02",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "local_start": "14:00",
+    "local_end": "16:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "14:00",
+    "london_end": "16:00"
+  },
+  {
+    "date": "06/04/26",
     "activity": "ECS518U/B/Lab/02",
     "description": "Operating Systems",
     "type": "Lab",
@@ -980,6 +3169,50 @@
   },
   {
     "date": "07/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "07/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "07/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "07/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "07/04/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -988,6 +3221,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "09/04/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "09/04/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "09/04/26",
@@ -1024,6 +3279,50 @@
   },
   {
     "date": "14/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "14/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "14/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-201) (60)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "14/04/26",
+    "activity": "ECS522U/ECS744P-B-Lab/01",
+    "description": "Graphical User Interfaces",
+    "type": "Lab",
+    "local_start": "09:00",
+    "local_end": "11:00",
+    "location": "TB Lab - 2nd Floor (TB-202) (40)",
+    "london_start": "09:00",
+    "london_end": "11:00"
+  },
+  {
+    "date": "14/04/26",
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -1032,6 +3331,28 @@
     "location": "Arts Two: LT (304)",
     "london_start": "12:00",
     "london_end": "14:00"
+  },
+  {
+    "date": "16/04/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - GF (TB-G02) (110)",
+    "london_start": "11:00",
+    "london_end": "13:00"
+  },
+  {
+    "date": "16/04/26",
+    "activity": "ECS506U/B/LabSession/02",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "local_start": "11:00",
+    "local_end": "13:00",
+    "location": "TB Lab - 1st Floor (TB-101/102) (94)",
+    "london_start": "11:00",
+    "london_end": "13:00"
   },
   {
     "date": "16/04/26",

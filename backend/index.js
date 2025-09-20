@@ -111,9 +111,11 @@ app.get('/api/calendar', async (req, res) => {
         };
 
         const events = schedule.map(transformEventToIcsFormat);
+        console.log(events);
         const filePaths = await Promise.all(
             uniqueTypes.map(async (type) => {
                 const filteredEvents = events.filter(event => event.categories[1] === type);
+                console.log(filteredEvents[0].categories[1], type)
 
                 return await new Promise((resolve, reject) => {
                     ics.createEvents(filteredEvents, (err, value) => {

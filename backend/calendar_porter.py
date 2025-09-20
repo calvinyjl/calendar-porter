@@ -23,11 +23,13 @@ def html_to_dataframe(student_id: int):
         date = schedule.find("span", class_="labelone")
         table = schedule.find("table", class_="spreadsheet")
         for row in table.find_all("tr"):
+            if row.has_attr('class') and "columnTitles" in row['class']:
+                continue
             row_data = []
             row_data.append(date.get_text(strip=True)[-8:])
             for cell in row.find_all("td"):
                 row_data.append(cell.get_text(strip=True))
-        data.append(row_data)
+            data.append(row_data)
 
     # schedule = soup.find("div", class_="spreadsheet")
     # date = schedule.find("span", class_="labelone")
