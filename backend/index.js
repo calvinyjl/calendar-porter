@@ -68,10 +68,7 @@ app.post('/api/scrape', async (req, res) => {
 
         console.log('Scraping completed successfully!');
 
-        fs.writeFileSync(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2), (err) => {
-            console.log('Writing to schedule.json...');
-            if (err) throw new Error(`Failed to write to schedule.json: ${err}`);
-        });
+        await fs.promises.writeFile(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2));
         // res.json({
         //     success: true,
         //     message: 'Scraping completed successfully!',
@@ -91,9 +88,9 @@ app.post('/api/scrape', async (req, res) => {
 });
 
 // Converting the .json to .ics
-app.get('/api/calendar', (req, res) => {
+app.get('/api/calendar', async (req, res) => {
     try {
-        const fileContent = fs.readFileSync('schedule.json', 'utf8');
+        const fileContent = fs.promises.readFile('schedule.json', 'utf8');
         const schedule = JSON.parse(fileContent);
         const uniqueTypes = [...new Set(schedule.map(item => item.type))];
 
@@ -114,28 +111,27 @@ app.get('/api/calendar', (req, res) => {
         };
 
         const events = schedule.map(transformEventToIcsFormat);
-        var filePaths = [];
-        uniqueTypes.forEach(async (type) => {
-            filteredEvents = events.filter(event => event.type === type);
+        const filePaths = await Promise.all(
+            uniqueTypes.map(async (type) => {
+                const filteredEvents = events.filter(event => event.type === type);
 
-            const convertToIcs = await new Promise((resolve, reject) => {
-                ics.createEvents(events, (err, value) => {
-                    if (err) {
-                        console.log(err);
-                        reject(new Error(`Failed to create ics file: ${err}`));
-                    }
-                    fs.writeFileSync(path.join(__dirname, 'calendars', `/${type}.ics`), value);
-                    resolve(path.join(__dirname, 'calendars', `/${type}.ics`));
-
-                    filePaths.push({
-                        path: path.join(__dirname, 'calendars', `/${type}.ics`), name: `${type}.ics`
+                return await new Promise((resolve, reject) => {
+                    ics.createEvents(filteredEvents, (err, value) => {
+                        if (err) {
+                            console.log(err);
+                            reject(new Error(`Failed to create ics file: ${err}`));
+                        } else {
+                            const filePath = path.join(__dirname, 'calendar', `${type}.ics`);
+                            fs.promises.writeFile(filePath, value);
+                            resolve({
+                                path: filePath, name: `${type}.ics`
+                            });
+                        }
                     });
                 });
-            });
-        });
+            })
+        )
 
-        // res.download(path.join(__dirname, '/calendar.ics'));
-        console.log(filePaths);
         res.zip(filePaths);
 
     } catch (err) {
