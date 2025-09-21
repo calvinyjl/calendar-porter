@@ -2,4 +2,4 @@ requirements.txt
 node_modules
 schedule.json
 calendar.ics
-calendars
+calendar
