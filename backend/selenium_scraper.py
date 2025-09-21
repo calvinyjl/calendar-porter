@@ -4,7 +4,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import sys
+import pandas as pd
 
+# Uses a chrome driver to access the list timetable
 def scrape_qmul_timetable(student_id: int):
     driver = webdriver.Chrome()
 
@@ -37,17 +39,32 @@ def scrape_qmul_timetable(student_id: int):
 
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
-        print(soup)
+
+        data = parse_timetable_data(soup)
+        df = pd.DataFrame(data, columns=['day', 'activity', 'description', 'type', 'start', 'end', 'weeks', 'room', 'staff'])
+        return df
 
     finally:
         driver.quit()
 
+# Parses HTML into arrays
+# Inserts index for day of the week to calculate day offset
 def parse_timetable_data(soup: BeautifulSoup):
-    events = []
-    column_titles = []
-
+    days = soup.find_all('table', class_='spreadsheet')
+    data = []
+    for i in range(len(days)):
+        for row in days[i].find_all('tr'):
+            if row.has_attr('class') and 'columnTitles' in row['class']:
+                continue
+            row_data = [i]
+            for cell in row.find_all('td'):
+                row_data.append(cell.get_text(strip=True))
+            data.append(row_data)
+                   
+    return data
 
 if __name__ == "__main__":
     id = int(sys.argv[1])
-    scrape_qmul_timetable(id)
+    df = scrape_qmul_timetable(id)
+    print(df.to_json(orient='records'))
     sys.stdout.flush()

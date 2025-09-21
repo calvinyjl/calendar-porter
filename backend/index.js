@@ -4,6 +4,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const ics = require('ics');
+const { mainModule } = require('process');
 const app = express();
 
 // Middleware
@@ -28,7 +29,7 @@ app.post('/api/scrape', async (req, res) => {
     console.log('Running scraper for student:', studentId);
 
     try {
-        const scraper = spawn('python', ['calendar_porter.py', studentId]);
+        const scraper = spawn('python', ['selenium_scraper.py', studentId]);
 
         const result = await new Promise((resolve, reject) => {
             let output = '';
@@ -36,7 +37,6 @@ app.post('/api/scrape', async (req, res) => {
 
             scraper.stdout.on('data', (data) => {
                 output += data.toString();
-                // console.log('Python output chunk:', data.toString());
             });
 
             scraper.stderr.on('data', (data) => {
@@ -69,51 +69,89 @@ app.post('/api/scrape', async (req, res) => {
         console.log('Scraping completed successfully!');
 
         await fs.promises.writeFile(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2));
-        // res.json({
-        //     success: true,
-        //     message: 'Scraping completed successfully!',
-        //     studentId: studentId,
-        // });
+
         res.redirect('/api/calendar');
 
     } catch (error) {
-        console.error('Scraping failed:', error.message);
-        res.status(500).json({
-            success: false,
-            message: 'Scraping failed',
-            error: error.message,
-            studentId: studentId
-        });
+        if (!res.headersSent) {
+            console.error('Scraping failed:', error.message);
+            res.status(500).json({
+                success: false,
+                message: 'Scraping failed',
+                error: error.message,
+                studentId: studentId
+            });
+        }
     }
 });
 
 // Converting the .json to .ics
 app.get('/api/calendar', async (req, res) => {
+    function transformEventToIcsFormat(event) {
+        // Getting list of all weeks from range
+        let weeks = [];
+        const ranges = event.weeks.split(',');
+        ranges.map((range) => {
+            if (range.includes('-')) {
+                const weekRange = range.split('-').map(Number);
+                for (var i = weekRange[0]; i <= weekRange[1]; i++) {
+                    weeks.push(i);
+                }
+            } else {
+                weeks.push(parseInt(range));
+            };
+        });
+
+        const allEvents = [];
+
+        for (const week of weeks) {
+            const start = calculateDateFromWeekDay(week, event.day, event.start);
+
+            const [startHour, startMinute] = event.start.split(':').map(Number);
+            const [endHour, endMinute] = event.end.split(':').map(Number);
+
+            let [durationHour, durationMinute] = [endHour - startHour, endMinute - startMinute];
+            if (durationMinute < 0) {
+                durationHour -= 1;
+                durationMinute += 60;
+            }
+
+            allEvents.push({
+                start: start,
+                duration: { hours: durationHour, minutes: durationMinute },
+                title: event.description,
+                description: event.activity,
+                location: event.room,
+                categories: [event.type, 'School'],
+                organizer: { name: event.staff }
+            });
+        }
+
+        return allEvents;
+    };
+
+    function calculateDateFromWeekDay(weekNumber, day, startTime) {
+        const START_DATE = new Date(2025, 8, 22);
+        const REFERENCE_WEEK = 8;
+
+        const weekDifference = weekNumber - REFERENCE_WEEK;
+        const targetDate = new Date(START_DATE)
+        targetDate.setDate(START_DATE.getDate() + (weekDifference * 7) + day);
+
+        const [startHour, startMinute] = startTime.split(':').map(Number);
+
+        return [targetDate.getFullYear(), targetDate.getMonth() + 1, targetDate.getDate(), startHour, startMinute];
+    };
+
     try {
-        const fileContent = fs.promises.readFile('schedule.json', 'utf8');
+        const fileContent = await fs.promises.readFile('schedule.json', 'utf8');
         const schedule = JSON.parse(fileContent);
         const uniqueTypes = [...new Set(schedule.map(item => item.type))];
 
-        function transformEventToIcsFormat(event) {
-            const [day, month, year] = event.date.split('/').map(Number);
-            const fullYear = year + 2000;
-            const [startHour, startMinute] = event.local_start.split(':').map(Number);
-            const [endHour, endMinute] = event.local_end.split(':').map(Number);
-
-            return {
-                start: [fullYear, month, day, startHour, startMinute],
-                duration: { hours: endHour - startHour, minutes: endMinute - startMinute },
-                title: event.activity,
-                description: event.description,
-                location: event.location,
-                categories: ['School', event.type]
-            }
-        };
-
-        const events = schedule.map(transformEventToIcsFormat);
+        const events = schedule.map(transformEventToIcsFormat).flat();
         const filePaths = await Promise.all(
             uniqueTypes.map(async (type) => {
-                const filteredEvents = events.filter(event => event.type === type);
+                const filteredEvents = events.filter(event => event.categories[0] === type);
 
                 return await new Promise((resolve, reject) => {
                     ics.createEvents(filteredEvents, (err, value) => {
@@ -127,10 +165,10 @@ app.get('/api/calendar', async (req, res) => {
                                 path: filePath, name: `${type}.ics`
                             });
                         }
-                    });
+                    })
                 });
             })
-        )
+        );
 
         res.zip(filePaths);
 
