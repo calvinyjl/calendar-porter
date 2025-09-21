@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/script.js" defer></script>
     <title>Calendar Porter</title>
 </head>
 
 <body>
     <p>This site will port your QMUL timetable into your native calendar app!</p>
-    <form action="/api/scrape" method="POST">
+    <form id="scrapeForm" action="/api/scrape" method="POST">
         <label for="studentId">Student ID</label>
         <input type="text" name="studentId" id="studentId">
         <button type="submit">Convert!</button>

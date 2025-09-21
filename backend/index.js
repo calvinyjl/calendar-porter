@@ -12,6 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Endpoints
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'home.html'));
 });
@@ -70,7 +72,12 @@ app.post('/api/scrape', async (req, res) => {
 
         await fs.promises.writeFile(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2));
 
-        res.redirect('/api/calendar');
+        res.json({
+            success: true,
+            message: 'Scraping completed successfully',
+            downloadUrl: '/api/calendar',
+            studentId: studentId
+        });
 
     } catch (error) {
         if (!res.headersSent) {
@@ -154,13 +161,13 @@ app.get('/api/calendar', async (req, res) => {
                 const filteredEvents = events.filter(event => event.categories[0] === type);
 
                 return await new Promise((resolve, reject) => {
-                    ics.createEvents(filteredEvents, (err, value) => {
+                    ics.createEvents(filteredEvents, async (err, value) => {
                         if (err) {
                             console.log(err);
                             reject(new Error(`Failed to create ics file: ${err}`));
                         } else {
                             const filePath = path.join(__dirname, 'calendar', `${type}.ics`);
-                            fs.promises.writeFile(filePath, value);
+                            await fs.promises.writeFile(filePath, value);
                             resolve({
                                 path: filePath, name: `${type}.ics`
                             });
