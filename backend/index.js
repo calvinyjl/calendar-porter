@@ -78,12 +78,14 @@ app.post('/api/scrape', async (req, res) => {
 
     } catch (error) {
         console.error('Scraping failed:', error.message);
-        res.status(500).json({
-            success: false,
-            message: 'Scraping failed',
-            error: error.message,
-            studentId: studentId
-        });
+        if (!res.headersSent) {
+            res.status(500).json({
+                success: false,
+                message: 'Scraping failed',
+                error: error.message,
+                studentId: studentId
+            });
+        }
     }
 });
 
@@ -111,11 +113,9 @@ app.get('/api/calendar', async (req, res) => {
         };
 
         const events = schedule.map(transformEventToIcsFormat);
-        console.log(events);
         const filePaths = await Promise.all(
             uniqueTypes.map(async (type) => {
                 const filteredEvents = events.filter(event => event.categories[1] === type);
-                console.log(filteredEvents[0].categories[1], type)
 
                 return await new Promise((resolve, reject) => {
                     ics.createEvents(filteredEvents, (err, value) => {
