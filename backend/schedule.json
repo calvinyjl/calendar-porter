@@ -1,14 +1,14 @@
 [
   {
     "day": 0,
-    "activity": "ECS519U/A/Lab/01",
-    "description": "Database Systems",
-    "type": "Lab",
+    "activity": "ECS528U/A/Lecture/01",
+    "description": "Communications Systems",
+    "type": "Lecture",
     "start": "9:00",
     "end": "11:00",
-    "weeks": "9-19",
-    "room": "Location: TB Lab - 1st Floor (TB-101/102), Location: TB Lab - 2nd Floor (TB-201)",
-    "staff": "Dahlqvist,  Fredrik, Roelleke,  T"
+    "weeks": "8-19",
+    "room": "Location: Maths:MLT",
+    "staff": "Masaracchia,  Antonino"
   },
   {
     "day": 0,
@@ -34,25 +34,25 @@
   },
   {
     "day": 0,
-    "activity": "ECS509U/A/Lec/01",
-    "description": "Probability and Matrices",
-    "type": "Lecture",
-    "start": "14:00",
-    "end": "16:00",
-    "weeks": "8-19",
-    "room": "Location: Arts Two:LT",
-    "staff": "Zhang,  Q"
+    "activity": "ECS518U/B/Lab/01",
+    "description": "Operating Systems",
+    "type": "Lab",
+    "start": "11:00",
+    "end": "13:00",
+    "weeks": "26-36",
+    "room": "Location: TB - GF (TB-G02), Location: TB Lab - 1st Floor (TB-101/102)",
+    "staff": "Mukhanov,  Lev, Tombros,  A"
   },
   {
     "day": 0,
-    "activity": "ECS518U/B/Lab/02",
-    "description": "Operating Systems",
+    "activity": "ECS528U/A/ Lab Part 1-4",
+    "description": "Communications Systems",
     "type": "Lab",
     "start": "14:00",
     "end": "16:00",
-    "weeks": "26-36",
-    "room": "Location: TB Lab - 1st Floor (TB-101/102), Location: TB - GF (TB-G02)",
-    "staff": "Mukhanov,  Lev, Tombros,  A"
+    "weeks": "10,  13-14,  16,  18-19",
+    "room": "Location: TB Lab - 1st Floor (TB-101/102), Location: TB Lab - 2nd Floor (TB-201)",
+    "staff": "Masaracchia,  Antonino"
   },
   {
     "day": 0,
@@ -78,17 +78,6 @@
   },
   {
     "day": 1,
-    "activity": "ECS519U/A/Tutorial/03",
-    "description": "Database Systems",
-    "type": "Tutorial",
-    "start": "10:00",
-    "end": "11:00",
-    "weeks": "8-13,  15-19",
-    "room": "Location: Queens' QB-203 EECS",
-    "staff": "Islam,  Riasat"
-  },
-  {
-    "day": 1,
     "activity": "ECS522U/ECS744P-B-Lecture/1",
     "description": "Graphical User Interfaces",
     "type": "Lecture",
@@ -107,29 +96,40 @@
     "end": "16:00",
     "weeks": "8-19",
     "room": "Location: Peoples Palace:Great Hall",
-    "staff": "Kelmendi,  Edon, Tzevelekos,  N"
+    "staff": "Tzevelekos,  N, Kelmendi,  Edon"
   },
   {
     "day": 1,
-    "activity": "ECS519U/A/Lecture",
-    "description": "Database Systems",
-    "type": "Lecture",
-    "start": "16:00",
-    "end": "18:00",
-    "weeks": "8-13,  15-19",
-    "room": "Location: Arts Two:LT",
-    "staff": "Roelleke,  T, Dahlqvist,  Fredrik"
+    "activity": "ECS527U/B/LabSession/01",
+    "description": "Digital Systems Design",
+    "type": "Lab",
+    "start": "14:00",
+    "end": "16:00",
+    "weeks": "27,  29,  33,  35",
+    "room": "Location: Engineering:3.56 (48), Location: Engineering:3.52 (48), Location: Engineering: 153 Lab, Location: Engineering: 152 Lab",
+    "staff": "Nallanathan,  A"
   },
   {
-    "day": 2,
-    "activity": "ECS509U/A/Tutorial/01",
-    "description": "Probability and Matrices",
+    "day": 1,
+    "activity": "ECS528U/A/Tutorial",
+    "description": "Communication Systems",
     "type": "Tutorial",
-    "start": "12:00",
-    "end": "13:00",
-    "weeks": "9-19",
-    "room": "Location: Bancroft:1.13",
-    "staff": "Zhang,  Q"
+    "start": "16:00",
+    "end": "17:00",
+    "weeks": "8-19",
+    "room": "Location: Maths:MLT",
+    "staff": "Masaracchia,  Antonino"
+  },
+  {
+    "day": 3,
+    "activity": "ECS506U/B/LabSession/01",
+    "description": "Software Engineering Project",
+    "type": "Lab",
+    "start": "9:00",
+    "end": "11:00",
+    "weeks": "26-37",
+    "room": "Location: TB - GF (TB-G02), Location: TB Lab - 1st Floor (TB-101/102)",
+    "staff": "Bozkurt,  M"
   },
   {
     "day": 3,
@@ -155,17 +155,6 @@
   },
   {
     "day": 3,
-    "activity": "ECS506U/B/LabSession/02",
-    "description": "Software Engineering Project",
-    "type": "Lab",
-    "start": "11:00",
-    "end": "13:00",
-    "weeks": "26-37",
-    "room": "Location: TB Lab - 1st Floor (TB-101/102), Location: TB - GF (TB-G02)",
-    "staff": "Bozkurt,  M"
-  },
-  {
-    "day": 3,
     "activity": "ECS529U/A/Lab/01",
     "description": "Algorithms and Data Structures",
     "type": "Lab",
@@ -173,29 +162,18 @@
     "end": "16:00",
     "weeks": "8-19",
     "room": "Location: TB Lab - 1st Floor (TB-101/102), Location: TB - GF (TB-G02)",
-    "staff": "Kelmendi,  Edon, Tzevelekos,  N"
+    "staff": "Tzevelekos,  N, Kelmendi,  Edon"
   },
   {
-    "day": 3,
-    "activity": "ECS524U/B/Lecture",
-    "description": "Internet Protocols and Applications",
+    "day": 4,
+    "activity": "ECS502U/A/Lecture",
+    "description": "Microprocessor Systems Design",
     "type": "Lecture",
-    "start": "14:00",
-    "end": "16:00",
-    "weeks": "26-37",
-    "room": "Location: Peoples Palace:Skeel-LT",
-    "staff": "Castro,  I"
-  },
-  {
-    "day": 3,
-    "activity": "ECS524U/B/LabSession/01",
-    "description": "Internet Protocols and Applications",
-    "type": "Lab",
-    "start": "16:00",
-    "end": "18:00",
-    "weeks": "27,  29,  32,  34",
-    "room": "Location: TB Lab - 2nd Floor (TB-202), Location: TB Lab - 1st Floor (TB-101/102), Location: TB - GF (TB-G02)",
-    "staff": "Castro,  I"
+    "start": "11:00",
+    "end": "13:00",
+    "weeks": "8-19",
+    "room": "Location: Fogg LT",
+    "staff": "Timarchi,  Somayyeh"
   },
   {
     "day": 4,
@@ -207,5 +185,49 @@
     "weeks": "26-37",
     "room": "Location: Peoples Palace:Great Hall",
     "staff": "Tombros,  A, Mukhanov,  Lev"
+  },
+  {
+    "day": 4,
+    "activity": "ECS502U/A/Tutorial",
+    "description": "Microprocessor Systems Design",
+    "type": "Tutorial",
+    "start": "14:00",
+    "end": "15:00",
+    "weeks": "8-19",
+    "room": "Location: G.O.Jones LT",
+    "staff": "Timarchi,  Somayyeh"
+  },
+  {
+    "day": 4,
+    "activity": "ECS527U/B/Tutorial",
+    "description": "Digital Systems Design",
+    "type": "Tutorial",
+    "start": "14:00",
+    "end": "15:00",
+    "weeks": "26-34",
+    "room": "Location: Fogg LT",
+    "staff": "Nallanathan,  A"
+  },
+  {
+    "day": 4,
+    "activity": "ECS502U/A/Lab/01",
+    "description": "Microprocessor Systems Design",
+    "type": "Lab",
+    "start": "15:00",
+    "end": "18:00",
+    "weeks": "14-16",
+    "room": "Location: Engineering:3.56 (48), Location: Engineering:3.52 (48), Location: Engineering: 153 Lab",
+    "staff": "Timarchi,  Somayyeh"
+  },
+  {
+    "day": 4,
+    "activity": "ECS527U/B/Lecture",
+    "description": "Digital Systems Design",
+    "type": "Lecture",
+    "start": "16:00",
+    "end": "18:00",
+    "weeks": "26-37",
+    "room": "Location: G.O.Jones LT",
+    "staff": "Nallanathan,  A"
   }
 ]

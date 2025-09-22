@@ -127,10 +127,9 @@ app.get('/api/calendar', async (req, res) => {
                 start: start,
                 duration: { hours: durationHour, minutes: durationMinute },
                 title: event.description,
-                description: event.activity,
+                description: `[${event.type}] ${event.activity}`,
                 location: event.room,
                 categories: [event.type, 'School'],
-                organizer: { name: event.staff }
             });
         }
 
@@ -156,28 +155,44 @@ app.get('/api/calendar', async (req, res) => {
         const uniqueTypes = [...new Set(schedule.map(item => item.type))];
 
         const events = schedule.map(transformEventToIcsFormat).flat();
-        const filePaths = await Promise.all(
-            uniqueTypes.map(async (type) => {
-                const filteredEvents = events.filter(event => event.categories[0] === type);
+        // Separate calendars
+        // const filePaths = await Promise.all(
+        //     uniqueTypes.map(async (type) => {
+        //         const filteredEvents = events.filter(event => event.categories[0] === type);
 
-                return await new Promise((resolve, reject) => {
-                    ics.createEvents(filteredEvents, async (err, value) => {
-                        if (err) {
-                            console.log(err);
-                            reject(new Error(`Failed to create ics file: ${err}`));
-                        } else {
-                            const filePath = path.join(__dirname, 'calendar', `${type}.ics`);
-                            await fs.promises.writeFile(filePath, value);
-                            resolve({
-                                path: filePath, name: `${type}.ics`
-                            });
-                        }
-                    })
-                });
-            })
-        );
+        //         return await new Promise((resolve, reject) => {
+        //             ics.createEvents(filteredEvents, async (err, value) => {
+        //                 if (err) {
+        //                     console.log(err);
+        //                     reject(new Error(`Failed to create ics file: ${err}`));
+        //                 } else {
+        //                     const filePath = path.join(__dirname, 'calendar', `${type}.ics`);
+        //                     await fs.promises.writeFile(filePath, value);
+        //                     resolve({
+        //                         path: filePath, name: `${type}.ics`
+        //                     });
+        //                 }
+        //             })
+        //         });
+        //     })
+        // );
 
-        res.zip(filePaths);
+        // res.zip(filePaths);
+
+        // One calendar
+        console.log(events);
+        await new Promise((resolve, reject) => {
+            ics.createEvents(events, async (err, value) => {
+                if (err) {
+                    reject(new Error(`Failed to create ics file: ${err}`));
+                } else {
+                    const filePath = path.join(__dirname, 'calendar', `calendar.ics`);
+                    resolve(await fs.promises.writeFile(filePath, value));
+                }
+            });
+        });
+
+        res.download(path.join(__dirname, 'calendar', 'calendar.ics'));
 
     } catch (err) {
         console.log('Converting failed:', err.message);

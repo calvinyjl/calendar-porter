@@ -8,6 +8,8 @@ document.getElementById('scrapeForm').addEventListener('submit', async function 
     submitBtn.disabled = true;
     submitBtn.textContent = 'Scraping...';
 
+    console.log(formData.get('studentId'));
+
     try {
         const response = await fetch('/api/scrape', {
             method: 'POST',
