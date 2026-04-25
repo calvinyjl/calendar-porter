@@ -23,7 +23,7 @@ document.getElementById('scrapeForm').addEventListener('submit', async function 
 
         const result = await response.json();
 
-        setTimeout(() => { window.location.href = result.downloadUrl }, 1000);
+        setTimeout(() => { window.location.href = result.downloadUrl }, 3000);
 
     } catch (err) {
         throw err;
