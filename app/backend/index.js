@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'home.html'));
+    res.sendFile(path.join(__dirname, '../', 'frontend', 'home.html'));
 });
 
 // Runs scraping script
@@ -31,7 +31,7 @@ app.post('/api/scrape', async (req, res) => {
     console.log('Running scraper for student:', studentId);
 
     try {
-        const scriptPath = path.join(__dirname, 'selenium_scraper.py');
+        const scriptPath = path.join(__dirname, '../', 'scrapers', 'selenium_scraper.py');
         const pythonCmd = process.platform === 'win32' ? 'python' : 'python3';
         console.log(`Starting scraper using command: ${pythonCmd} ${scriptPath}`);
         const scraper = spawn(pythonCmd, [scriptPath, studentId], { cwd: __dirname });
@@ -80,12 +80,7 @@ app.post('/api/scrape', async (req, res) => {
 
         await fs.promises.writeFile(path.join(__dirname, 'schedule.json'), JSON.stringify(result, null, 2));
 
-        res.json({
-            success: true,
-            message: 'Scraping completed successfully',
-            downloadUrl: '/api/calendar',
-            studentId: studentId
-        });
+        res.redirect('/api/calendar');
 
     } catch (error) {
         if (!res.headersSent) {
@@ -146,8 +141,10 @@ app.get('/api/calendar', async (req, res) => {
         return allEvents;
     };
 
+    // Calculates the dates of events from an offset starting week
+    // Change the START_DATE and REFERENCE_WEEK to the first week of events according to the official timetable website
     function calculateDateFromWeekDay(weekNumber, day, startTime) {
-        const START_DATE = new Date(2025, 8, 22);
+        const START_DATE = new Date(2026, 8, 21); // JS months start from 0
         const REFERENCE_WEEK = 8;
 
         const weekDifference = weekNumber - REFERENCE_WEEK;
@@ -160,49 +157,50 @@ app.get('/api/calendar', async (req, res) => {
     };
 
     try {
-        const fileContent = await fs.promises.readFile('schedule.json', 'utf8');
+        const fileContent = await fs.promises.readFile(path.join(__dirname, 'schedule.json'), 'utf8');
         const schedule = JSON.parse(fileContent);
         const uniqueTypes = [...new Set(schedule.map(item => item.type))];
 
         const events = schedule.map(transformEventToIcsFormat).flat();
-        // Separate calendars
-        const filePaths = await Promise.all(
-            uniqueTypes.map(async (type) => {
-                const filteredEvents = events.filter(event => event.categories[0] === type);
 
-                return await new Promise((resolve, reject) => {
-                    ics.createEvents(filteredEvents, async (err, value) => {
-                        if (err) {
-                            console.log(err);
-                            reject(new Error(`Failed to create ics file: ${err}`));
-                        } else {
-                            const filePath = path.join(__dirname, 'calendar', `${type}.ics`);
-                            await fs.promises.writeFile(filePath, value);
-                            resolve({
-                                path: filePath, name: `${type}.ics`
-                            });
-                        }
-                    })
-                });
-            })
-        );
+        // // Separate calendars
+        // const filePaths = await Promise.all(
+        //     uniqueTypes.map(async (type) => {
+        //         const filteredEvents = events.filter(event => event.categories[0] === type);
 
-        res.zip(filePaths);
+        //         return await new Promise((resolve, reject) => {
+        //             ics.createEvents(filteredEvents, async (err, value) => {
+        //                 if (err) {
+        //                     console.log(err);
+        //                     reject(new Error(`Failed to create ics file: ${err}`));
+        //                 } else {
+        //                     const filePath = path.join(__dirname, 'calendar', `${type}.ics`);
+        //                     await fs.promises.writeFile(filePath, value);
+        //                     resolve({
+        //                         path: filePath, name: `${type}.ics`
+        //                     });
+        //                 }
+        //             })
+        //         });
+        //     })
+        // );
+
+        // res.zip(filePaths);
 
         // One calendar
-        // console.log(events);
-        // await new Promise((resolve, reject) => {
-        //     ics.createEvents(events, async (err, value) => {
-        //         if (err) {
-        //             reject(new Error(`Failed to create ics file: ${err}`));
-        //         } else {
-        //             const filePath = path.join(__dirname, 'calendar', `calendar.ics`);
-        //             resolve(await fs.promises.writeFile(filePath, value));
-        //         }
-        //     });
-        // });
+        console.log(events);
+        await new Promise((resolve, reject) => {
+            ics.createEvents(events, async (err, value) => {
+                if (err) {
+                    reject(new Error(`Failed to create ics file: ${err}`));
+                } else {
+                    const filePath = path.join(__dirname, '../', 'calendar', 'calendar.ics');
+                    resolve(await fs.promises.writeFile(filePath, value));
+                }
+            });
+        });
 
-        // res.download(path.join(__dirname, 'calendar', 'calendar.ics'));
+        res.download(path.join(__dirname, '../', 'calendar', 'calendar.ics'));
 
     } catch (err) {
         console.log('Converting failed:', err.message);
