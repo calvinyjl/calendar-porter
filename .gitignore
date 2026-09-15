@@ -1,4 +1,5 @@
 node_modules
 venv
-app/output/
+app/calendar/
 schedule.json
+calendar.ics

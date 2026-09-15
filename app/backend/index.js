@@ -41,7 +41,8 @@ app.post('/api/scrape', async (req, res) => {
             let errorOutput = '';
 
             scraper.stdout.on('data', (data) => {
-                output += data.toString();
+                 output += data.toString();
+                 console.log('Scraper Output:', data.toString())
             });
 
             scraper.stderr.on('data', (data) => {

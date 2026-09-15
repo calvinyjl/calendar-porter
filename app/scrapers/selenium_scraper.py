@@ -8,7 +8,7 @@ import pandas as pd
 
 # Uses a chrome driver to access the list timetable
 def scrape_qmul_timetable(student_id: int):
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
 
     try:
         driver.get('https://timetables.qmul.ac.uk/default.aspx')
